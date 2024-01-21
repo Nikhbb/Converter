@@ -23,7 +23,7 @@ public class Main {
     }
 
     private static double getResult(double inputValue, boolean isConvertToMiles){
-        return -1;
+        return !isConvertToMiles ? inputValue * 1.60934 : 0;
     }
 
     private static void printResult(double inputValue, boolean isConvertToMiles, double result){
