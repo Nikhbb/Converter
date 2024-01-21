@@ -29,9 +29,9 @@ public class Main {
 
     private static void printResult(double inputValue, boolean isConvertToMiles, double result) {
         if (!isConvertToMiles) {
-            System.out.println(inputValue + " m = " + result + " km");
+            System.out.println(inputValue + " mi = " + result + " km");
         } else {
-            System.out.println(inputValue + " km = " + result + " m");
+            System.out.println(inputValue + " km = " + result + " mi");
         }
     }
 
