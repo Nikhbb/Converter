@@ -1,5 +1,7 @@
 package app;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         double inputValue = inputValue();
@@ -9,9 +11,9 @@ public class Main {
     }
 
     private static double inputValue(){
-        double value = 0;
-
-        return value;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введіть значення: ");
+        return scanner.nextDouble();
     }
 
     private static  boolean isConvertToMiles(){
