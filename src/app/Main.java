@@ -17,9 +17,9 @@ public class Main {
     }
 
     private static  boolean isConvertToMiles(){
-        boolean isConvertToMiles = false;
-
-        return isConvertToMiles;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Перевести в милі (так=1/ні=0)?  ");
+        return (scanner.nextInt() == 1) ? true : false;
     }
 
     private static double getResult(double inputValue, boolean isConvertToMiles){
