@@ -23,14 +23,15 @@ public class Main {
     }
 
     private static double getResult(double inputValue, boolean isConvertToMiles) {
-        return !isConvertToMiles ? inputValue * 1.60934 : 0;
+        double index = 1.60934;
+        return !isConvertToMiles ? (inputValue * index) : (inputValue / index);
     }
 
     private static void printResult(double inputValue, boolean isConvertToMiles, double result) {
         if (!isConvertToMiles) {
             System.out.println(inputValue + " m = " + result + " km");
         } else {
-            System.out.println("Convert to kilometers only");
+            System.out.println(inputValue + " km = " + result + " m");
         }
     }
 
