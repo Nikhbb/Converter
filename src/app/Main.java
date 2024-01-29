@@ -4,21 +4,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double inputValue = inputValue();
         boolean isConvertToMiles = isConvertToMiles();
+        double inputValue = inputValue();
 
         printResult(inputValue, isConvertToMiles, getResult(inputValue, isConvertToMiles));
     }
 
     private static double inputValue() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введіть значення: ");
+        System.out.print("Input your value: ");
         return scanner.nextDouble();
     }
 
     private static boolean isConvertToMiles() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Перевести в милі (так=1/ні=0)?  ");
+        System.out.print("Converter MENU\n1 - for km to mi\n2 - for mi to km\nInput your choose: ");
         return (scanner.nextInt() == 1) ? true : false;
     }
 
@@ -28,6 +28,7 @@ public class Main {
     }
 
     private static void printResult(double inputValue, boolean isConvertToMiles, double result) {
+        System.out.println("\nRESULT:");
         if (!isConvertToMiles) {
             System.out.println(inputValue + " mi = " + result + " km");
         } else {
